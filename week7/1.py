@@ -111,3 +111,19 @@ print(dict(zip(li1,zip(li2,li3))))
 
 print(list(enumerate(li1)))
 print(dict(enumerate(li1)))
+
+#강의실 알려주기
+lecture = ["파이썬","C++","AI","JAVA","Spring"]
+clroom = [101,102,103,104,105]
+ex = dict(zip(lecture,clroom))
+#dictionary 로 만들고 for문을돌린다 quit이 들어올때 까지 계속 받음
+while True :
+    c = input("강의명을 쓰시오(quit를 입력할 시 종료 됩니다.)")
+    if c == "quit" :
+        print("종료합니다.")
+        break
+    else :
+        if c in ex.keys() :
+            print(ex[c])
+        else :
+            continue
