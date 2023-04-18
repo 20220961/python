@@ -108,3 +108,6 @@ for i in lia :
 print(list(zip(li2,li3)))
 print(dict(zip(li2,li3)))
 print(dict(zip(li1,zip(li2,li3))))
+
+print(list(enumerate(li1)))
+print(dict(enumerate(li1)))
